@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memeBox {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: #ffeb3b;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    animation: boxPulse 1.5s infinite alternate;
+}
+
+#memeSentence {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+
+@keyframes boxPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+        background-color: #f02c0a;
+    }
+    25% {
+        background-color: #14db14; 
+    }
+    50% {
+        background-color: #1e90ff; 
+    }
+    75% {
+        background-color: #f714ff; 
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.3);
+    }
+}
+@keyframes colorChange {
+    0% {
+        background-color: #ff6347; /* Tomato Red */
+    }
+    25% {
+        background-color: #32cd32; /* Lime Green */
+    }
+    50% {
+        background-color: #1e90ff; /* Dodger Blue */
+    }
+    75% {
+        background-color: #ff1493; /* Deep Pink */
+    }
+    100% {
+        background-color: #8a2be2; /* Blue Violet */
+    }
+}
